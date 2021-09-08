@@ -1,0 +1,29 @@
+
+.catchTime {
+    color: #441f1f;
+}
+
+.pokemon_image {
+    min-width: 450px;
+}
+
+.pokemon_image img:hover {
+    transform: translate(0, -5px);
+}
+
+.btn_catch {
+    height: 60px;
+    width: 130px;
+    box-shadow: 0 5px 15px 0 rgb(64, 66, 69);
+    transition: 0.5s;
+    font-size: 15px;
+    background: whitesmoke;
+    font-family: Roboto, sans-serif;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.btn_catch:hover {
+    transform: translate(0, -3px);
+    box-shadow: 0 20px 40px 0 rgb(42, 40, 40);
+}

@@ -1,0 +1,39 @@
+.menu.active {
+  display: none;
+}
+
+.bakground_image_container img {
+  width: 500px;
+}
+
+.menu_content {
+  position: absolute;
+  top: 420px;
+  left: 150px;
+  z-index: 1;
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: test, serif;
+}
+
+ul {
+  text-align: center;
+}
+
+li {
+  font-size: 35px;
+}
+
+li a:hover {
+  color: red;
+}
+
+@media screen and (max-width: 768px) {
+  .menu_content {
+    top: 155px;
+    left: 100px;
+  }
+}
