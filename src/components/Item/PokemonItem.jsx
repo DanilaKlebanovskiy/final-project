@@ -1,5 +1,7 @@
+import React from "react";
 import { NavLink } from "react-router-dom";
-import  "./PokemonItem.css"
+import "./PokemonItem.css";
+import PropTypes from "prop-types";
 
 const Pokemon = ({
   catchPokemonThunk,
@@ -10,9 +12,11 @@ const Pokemon = ({
   catchTime,
   isCatched,
 }) => {
+  // eslint-disable-next-line no-console
+  console.log(name);
   const catchPokemon = () => {
-    const catchTime = new Date();
-    const localTime = catchTime.toLocaleString();
+    const capturedTime = new Date();
+    const localTime = capturedTime.toLocaleString();
     catchPokemonThunk(
       id,
       { isCatched: true, catchTime: localTime },
@@ -27,7 +31,7 @@ const Pokemon = ({
             <img
               src={
                 id <= 720
-                  ? `https://raw.githubusercontent.com/katiadeo/final-project/main/pokemons/${id}.png`
+                  ? `https://github.com/DanilaKlebanovskiy/final-project/raw/main/pokemons/${id}.png`
                   : "https://w7.pngwing.com/pngs/317/369/png-transparent-unown-pokemon-x-and-y-pokemon-diamond-and-pearl-pokemon-go-pokedex-pokemon-go-logo-nintendo-video-game.png"
               }
               alt={name}
@@ -57,4 +61,22 @@ const Pokemon = ({
   );
 };
 
+Pokemon.propTypes = {
+  currentPage: PropTypes.number,
+  // eslint-disable-next-line react/require-default-props
+  catchPokemonThunk: PropTypes.func,
+  name: PropTypes.string,
+  id: PropTypes.number.isRequired,
+  isPokemonItem: PropTypes.bool,
+  catchTime: PropTypes.string,
+  isCatched: PropTypes.bool,
+};
+
+Pokemon.defaultProps = {
+  isPokemonItem: false,
+  catchTime: "free",
+  isCatched: false,
+  currentPage: 10,
+  name: "Unknown Pokemon",
+};
 export default Pokemon;

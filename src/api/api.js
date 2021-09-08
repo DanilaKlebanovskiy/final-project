@@ -15,7 +15,7 @@ export const pokemonAPI = {
   },
   getCaught(currentPage) {
     return fetch(
-      `http://localhost:3000/pokemons/?_page=${currentPage}&isCatched=true`
+      `http://localhost:3000/pokemons/?_start=0&_end=${currentPage}&isCatched=true`
     );
   },
   getPokemonItem(id) {

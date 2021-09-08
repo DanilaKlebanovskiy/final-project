@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import "./Menu.css";
 import menueBackground from "../../../image/backgroundForMenu.png";
 
-const Menu = ({ active, setActive, test }) => {
+const Menu = ({ active, setActive }) => {
   return (
     // eslint-disable-next-line jsx-a11y/click-events-have-key-events
     <div
@@ -28,19 +28,13 @@ const Menu = ({ active, setActive, test }) => {
           </li>
         </ul>
       </div>
-      <div>{test}</div>
     </div>
   );
-};
-Menu.defaultProps = {
-  active: true,
-  test: "string",
 };
 
 Menu.propTypes = {
   active: PropTypes.bool,
   setActive: PropTypes.func,
-  test: PropTypes.string.isRequired,
 };
 
 export default Menu;

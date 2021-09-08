@@ -4,13 +4,14 @@ const SET_POKEMONS = "SET_POKEMONS";
 const SET_CAUGHTPOKEMONS = "SET_CAUGHTPOKEMONS";
 const SET_POKEMON_ITEM = "SET_POKEMON_ITEM";
 const SET_LOADING = "SET_LOADING";
-const SET_END = "SET_END"
+const SET_TOTAL_COUNT = "SET_TOTAL_COUNT";
+
 const initialState = {
   pokemons: [],
   caughtPok: [],
   pokemonItem: {},
   loading: false,
-  isEnd: false,
+  totalCount: 5,
 };
 
 const PokemonReducer = (state = initialState, action) => {
@@ -23,7 +24,7 @@ const PokemonReducer = (state = initialState, action) => {
     case SET_CAUGHTPOKEMONS:
       return {
         ...state,
-        caughtPok: [...state.caughtPok, ...action.caughtPokemonsArray],
+        caughtPok: [...action.caughtPokemonsArray],
       };
     case SET_POKEMON_ITEM:
       return {
@@ -35,10 +36,10 @@ const PokemonReducer = (state = initialState, action) => {
         ...state,
         loading: action.isFetching,
       };
-    case SET_END:
+    case SET_TOTAL_COUNT:
       return {
         ...state,
-        isEnd: action.end
+        totalCount: action.totalCount,
       };
     default:
       return state;
@@ -58,20 +59,20 @@ export const pokemonItemAC = (pokemonItem) => ({
   pokemonItem,
 });
 export const setLoading = (isFetching) => ({ type: SET_LOADING, isFetching });
-export const setEndScrolAC = (end) => ({type: SET_END , end})
+export const setTotalCountAC = (totalCount) => ({
+  type: SET_TOTAL_COUNT,
+  totalCount,
+});
 
 export const caughtPokemonThunk = (currentPage) => {
   return async (dispatch) => {
     dispatch(setLoading(true));
     const response = await pokemonAPI.getCaught(currentPage);
     const result = await response.json();
-    if (result.length === 0){
-      dispatch(setEndScrolAC(true))
-    }else{
-      dispatch(caughtPokemonsAC(result));
-    }
+    const totalCount = await response.headers.get("X-Total-Count");
+    dispatch(setTotalCountAC(Number(totalCount)));
+    dispatch(caughtPokemonsAC(result));
     dispatch(setLoading(false));
-
   };
 };
 
@@ -80,6 +81,9 @@ export const pokemonThunk = (amount) => {
     dispatch(setLoading(true));
     const response = await pokemonAPI.getPokemons(amount);
     const result = await response.json();
+    const totalCount = await response.headers.get("X-Total-Count");
+    // eslint-disable-next-line no-console
+    dispatch(setTotalCountAC(Number(totalCount)));
     dispatch(PokemonsAC(result));
     dispatch(setLoading(false));
   };

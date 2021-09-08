@@ -4,7 +4,6 @@ import Menu from "./Menu/Menu";
 import burgerIcon from "../../image/icon.png";
 import "./Header.css";
 
-
 const Header = () => {
   const [menuActive, setMenuActive] = useState(false);
   return (
@@ -20,7 +19,7 @@ const Header = () => {
         >
           <img src={burgerIcon} className="icon_image" alt="Icon Burger" />
         </div>
-        <Menu active={menuActive} setActive={setMenuActive} test={false}/>
+        <Menu active={menuActive} setActive={setMenuActive} />
       </div>
     </>
   );
