@@ -1,6 +1,7 @@
 {
-  "name": "my-app",
-  "version": "0.1.0",
+  "name": "finalproject",
+  "version": "0.2.0",
+  "author": "Danila Klebanovskiy",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",

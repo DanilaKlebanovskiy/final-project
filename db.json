@@ -3,200 +3,142 @@
     {
       "name": "bulbasaur",
       "id": 1,
-      "isCatched": true,
-      "catchTime": "07.09.2021, 21:33:30"
+      "isCaught": true,
+      "catchTime": "09.09.2021, 13:06:00"
     },
     {
       "name": "ivysaur",
       "id": 2,
-      "isCatched": true,
-      "catchTime": "07.09.2021, 23:18:04"
+      "isCaught": true,
+      "catchTime": "09.09.2021, 13:23:21"
     },
     {
       "name": "venusaur",
       "id": 3,
-      "isCatched": true,
-      "catchTime": "07.09.2021, 21:32:42"
+      "isCaught": true,
+      "catchTime": "09.09.2021, 13:26:53"
     },
     {
       "name": "charmander",
       "id": 4,
-      "isCatched": true,
-      "catchTime": "08.09.2021, 18:10:03"
+      "isCaught": true,
+      "catchTime": "09.09.2021, 14:16:39"
     },
     {
       "name": "charmeleon",
-      "id": 5,
-      "isCatched": true,
-      "catchTime": "07.09.2021, 19:56:26"
+      "id": 5
     },
     {
       "name": "charizard",
-      "id": 6,
-      "isCatched": true,
-      "catchTime": "07.09.2021, 21:48:47"
+      "id": 6
     },
     {
       "name": "squirtle",
-      "id": 7,
-      "isCatched": true,
-      "catchTime": "07.09.2021, 21:48:01"
+      "id": 7
     },
     {
       "name": "wartortle",
-      "id": 8,
-      "isCatched": true,
-      "catchTime": "07.09.2021, 21:51:59"
+      "id": 8
     },
     {
       "name": "blastoise",
-      "id": 9,
-      "isCatched": true,
-      "catchTime": "07.09.2021, 21:58:42"
+      "id": 9
     },
     {
       "name": "caterpie",
-      "id": 10,
-      "isCatched": true,
-      "catchTime": "07.09.2021, 23:15:05"
+      "id": 10
     },
     {
       "name": "metapod",
-      "id": 11,
-      "isCatched": true,
-      "catchTime": "07.09.2021, 21:59:16"
+      "id": 11
     },
     {
       "name": "butterfree",
-      "id": 12,
-      "isCatched": true,
-      "catchTime": "07.09.2021, 21:59:15"
+      "id": 12
     },
     {
       "name": "weedle",
-      "id": 13,
-      "isCatched": true,
-      "catchTime": "07.09.2021, 21:41:26"
+      "id": 13
     },
     {
       "name": "kakuna",
-      "id": 14,
-      "isCatched": true,
-      "catchTime": "07.09.2021, 21:58:30"
+      "id": 14
     },
     {
       "name": "beedrill",
-      "id": 15,
-      "isCatched": true,
-      "catchTime": "07.09.2021, 21:49:26"
+      "id": 15
     },
     {
       "name": "pidgey",
-      "id": 16,
-      "isCatched": true,
-      "catchTime": "07.09.2021, 23:15:10"
+      "id": 16
     },
     {
       "name": "pidgeotto",
-      "id": 17,
-      "isCatched": true,
-      "catchTime": "07.09.2021, 23:35:40"
+      "id": 17
     },
     {
       "name": "pidgeot",
-      "id": 18,
-      "isCatched": true,
-      "catchTime": "07.09.2021, 23:05:19"
+      "id": 18
     },
     {
       "name": "rattata",
-      "id": 19,
-      "isCatched": true,
-      "catchTime": "07.09.2021, 23:36:06"
+      "id": 19
     },
     {
       "name": "raticate",
-      "id": 20,
-      "isCatched": true,
-      "catchTime": "07.09.2021, 23:30:36"
+      "id": 20
     },
     {
       "name": "spearow",
-      "id": 21,
-      "isCatched": true,
-      "catchTime": "07.09.2021, 23:30:39"
+      "id": 21
     },
     {
       "name": "fearow",
-      "id": 22,
-      "isCatched": true,
-      "catchTime": "08.09.2021, 16:49:04"
+      "id": 22
     },
     {
       "name": "ekans",
-      "id": 23,
-      "isCatched": true,
-      "catchTime": "07.09.2021, 23:30:49"
+      "id": 23
     },
     {
       "name": "arbok",
-      "id": 24,
-      "isCatched": true,
-      "catchTime": "07.09.2021, 23:36:39"
+      "id": 24
     },
     {
       "name": "pikachu",
-      "id": 25,
-      "isCatched": true,
-      "catchTime": "07.09.2021, 23:40:17"
+      "id": 25
     },
     {
       "name": "raichu",
-      "id": 26,
-      "isCatched": true,
-      "catchTime": "07.09.2021, 23:35:45"
+      "id": 26
     },
     {
       "name": "sandshrew",
-      "id": 27,
-      "isCatched": true,
-      "catchTime": "07.09.2021, 21:46:10"
+      "id": 27
     },
     {
       "name": "sandslash",
-      "id": 28,
-      "isCatched": true,
-      "catchTime": "08.09.2021, 21:46:53"
+      "id": 28
     },
     {
       "name": "nidoran-f",
-      "id": 29,
-      "isCatched": true,
-      "catchTime": "08.09.2021, 21:34:07"
+      "id": 29
     },
     {
       "name": "nidorina",
-      "id": 30,
-      "isCatched": true,
-      "catchTime": "08.09.2021, 21:34:10"
+      "id": 30
     },
     {
       "name": "nidoqueen",
-      "id": 31,
-      "isCatched": true,
-      "catchTime": "07.09.2021, 21:32:14"
+      "id": 31
     },
     {
       "name": "nidoran-m",
-      "id": 32,
-      "isCatched": true,
-      "catchTime": "07.09.2021, 23:35:48"
+      "id": 32
     },
     {
       "name": "nidorino",
-      "id": 33,
-      "isCatched": true,
-      "catchTime": "07.09.2021, 21:58:49"
+      "id": 33
     },
     {
       "name": "nidoking",
@@ -204,15 +146,11 @@
     },
     {
       "name": "clefairy",
-      "id": 35,
-      "isCatched": true,
-      "catchTime": "09.09.2021, 01:33:16"
+      "id": 35
     },
     {
       "name": "clefable",
-      "id": 36,
-      "isCatched": true,
-      "catchTime": "08.09.2021, 23:16:52"
+      "id": 36
     },
     {
       "name": "vulpix",
@@ -224,9 +162,7 @@
     },
     {
       "name": "jigglypuff",
-      "id": 39,
-      "isCatched": true,
-      "catchTime": "08.09.2021, 19:19:47"
+      "id": 39
     },
     {
       "name": "wigglytuff",
@@ -234,21 +170,15 @@
     },
     {
       "name": "zubat",
-      "id": 41,
-      "isCatched": true,
-      "catchTime": "08.09.2021, 21:30:43"
+      "id": 41
     },
     {
       "name": "golbat",
-      "id": 42,
-      "isCatched": true,
-      "catchTime": "08.09.2021, 21:32:23"
+      "id": 42
     },
     {
       "name": "oddish",
-      "id": 43,
-      "isCatched": true,
-      "catchTime": "08.09.2021, 21:18:36"
+      "id": 43
     },
     {
       "name": "gloom",
@@ -292,9 +222,7 @@
     },
     {
       "name": "psyduck",
-      "id": 54,
-      "isCatched": true,
-      "catchTime": "09.09.2021, 02:03:08"
+      "id": 54
     },
     {
       "name": "golduck",
@@ -354,9 +282,7 @@
     },
     {
       "name": "bellsprout",
-      "id": 69,
-      "isCatched": true,
-      "catchTime": "08.09.2021, 21:28:17"
+      "id": 69
     },
     {
       "name": "weepinbell",
@@ -460,21 +386,15 @@
     },
     {
       "name": "onix",
-      "id": 95,
-      "isCatched": true,
-      "catchTime": "07.09.2021, 21:36:24"
+      "id": 95
     },
     {
       "name": "drowzee",
-      "id": 96,
-      "isCatched": true,
-      "catchTime": "08.09.2021, 21:26:58"
+      "id": 96
     },
     {
       "name": "hypno",
-      "id": 97,
-      "isCatched": true,
-      "catchTime": "08.09.2021, 21:25:59"
+      "id": 97
     },
     {
       "name": "krabby",

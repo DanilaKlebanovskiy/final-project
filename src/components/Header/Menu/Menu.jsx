@@ -1,4 +1,3 @@
-/* eslint-disable react/require-default-props */
 import React from "react";
 import PropTypes from "prop-types";
 import "./Menu.css";
@@ -33,8 +32,8 @@ const Menu = ({ active, setActive }) => {
 };
 
 Menu.propTypes = {
-  active: PropTypes.bool,
-  setActive: PropTypes.func,
+  active: PropTypes.bool.isRequired,
+  setActive: PropTypes.func.isRequired,
 };
 
 export default Menu;

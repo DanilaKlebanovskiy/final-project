@@ -17,7 +17,7 @@ const PokemonPageContainer = ({ pokemonItem, getPokemonItemThunk }) => {
       name={pokemonItem.name}
       catchTime={pokemonItem.catchTime}
       id={id}
-      isCatched={pokemonItem.isCatched}
+      isCaught={pokemonItem.isCaught}
       isPokemonItem
     />
   );

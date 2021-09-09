@@ -42,10 +42,10 @@ const PokemonList = ({
     <Pokemon
       key={element.id}
       name={element.name}
-      id={element.id}
+      id={Number(element.id)}
       catchPokemonThunk={catchPokemonThunk}
       pokemonThunk={pokemonThunk}
-      isCatched={element.isCatched}
+      isCaught={element.isCaught}
       catchTime={element.catchTime}
       currentPage={currentPage}
     />
